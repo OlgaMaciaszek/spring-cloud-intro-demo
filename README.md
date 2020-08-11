@@ -1,6 +1,6 @@
 # Sample Credit Card application eco-system
 
-This branch contains the new stack demo. To see the same demo with Spring-Cloud-Netflix stack, check out the branch `old-stack`.
+This branch contains the demo with Spring Cloud Netflix Eureka. To see the same demo with other service registries, see the other branches.
 
 After running all the apps execute POST at `localhost:9080/application` passing 
 `cardApplication.json` as body.
@@ -92,8 +92,7 @@ endpoint returning response from the service.
 
 ## Client side load-balancing using LoadBalancerClient
 
-- Ribbon used via `@LoadBalanced` `WebClient`
-- Ribbon configuration modified via `@LoadBalancerClient`
+- `@LoadBalanced RestTemplate` uses Spring Cloud LoadBalancer under the hood
 
 ## Apps communicating via Gateway:
 - Routes have to be explicitly defined
@@ -107,6 +106,11 @@ endpoint returning response from the service.
 - Circuit breaker configuration modified in `Customizer<CircuitBreaker` bean 
 in a `@Configuration` class 
 - Resilience4J used underneath																																
+## Centralised configuration with Spring Cloud ConfigServer
+- card-service connects to ConfigServer to retrieve property values
+- ConfigServer backed by a git repository
+- Updating property values in a running application by using `@RefreshScope` beans and `/actuator/refresh` endpoint
+
 
 ## Micrometer + Prometheus
 - HTTP traffic monitoring using Micrometer + Prometheus
