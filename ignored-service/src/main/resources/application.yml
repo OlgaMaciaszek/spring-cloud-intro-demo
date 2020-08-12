@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: ignored
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 logging:
   level:

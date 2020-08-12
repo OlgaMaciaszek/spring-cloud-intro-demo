@@ -4,7 +4,7 @@ spring:
   cloud:
     loadbalancer:
       ribbon:
-        enabled: true
+        enabled: false
 logging:
   level:
     org.springframework: info
@@ -15,5 +15,7 @@ management:
     web:
       exposure:
         include:
+          - refresh
+          - env
           - metrics
           - prometheus
