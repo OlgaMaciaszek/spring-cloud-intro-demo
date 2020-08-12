@@ -15,6 +15,5 @@ management:
       exposure:
         include:
           - health
-          - hystrix.stream
           - metrics
           - prometheus

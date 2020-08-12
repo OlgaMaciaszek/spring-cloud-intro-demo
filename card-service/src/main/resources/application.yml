@@ -16,5 +16,7 @@ management:
       exposure:
         include:
           - health
+          - refresh
+          - env
           - metrics
           - prometheus
