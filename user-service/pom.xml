@@ -42,11 +42,9 @@
 			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
 
-		<!--Incubator project - https://github.com/spring-cloud-incubator/spring-cloud-circuitbreaker-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
-			<version>0.0.1.BUILD-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
