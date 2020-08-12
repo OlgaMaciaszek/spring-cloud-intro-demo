@@ -1,6 +1,6 @@
 # Sample Credit Card application eco-system
 
-This branch contains the demo with Spring Cloud Netflix Eureka. To see the same demo with other service registries, see the other branches.
+This branch contains the demo with Spring Cloud Consul. To see the same demo with other service registries, see the other branches.
 
 After running all the apps execute POST at `localhost:9080/application` passing 
 `cardApplication.json` as body.
