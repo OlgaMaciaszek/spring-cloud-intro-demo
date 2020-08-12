@@ -3,11 +3,18 @@
 
 name: Java CI with Maven
 
+
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - consul
+      - zookeeper
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - consul
+      - zookeeper
 
 jobs:
   build:
