@@ -27,7 +27,6 @@ echo "Killing running apps"
 kill_app card-service
 kill_app eureka-server
 kill_app fraud-verifier
-kill_app ignored-service
 kill_app turbine
 kill_app user-service
 kill_app zuul-proxy
@@ -45,7 +44,6 @@ wait 10
 
 run_app card-service
 run_app fraud-verifier
-run_app ignored-service
 run_app user-service
 run_app gateway-proxy
 
