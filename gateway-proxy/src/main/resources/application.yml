@@ -15,12 +15,6 @@ spring:
         - name: Retry
           args:
             retries: 3
-      - id: ignored
-        uri: lb://ignored
-        predicates:
-        - Path=/ignored/test/allowed
-        filters:
-        - StripPrefix=1
     loadbalancer:
       ribbon:
         enabled: false
