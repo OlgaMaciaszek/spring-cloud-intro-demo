@@ -5,7 +5,6 @@ import org.example.cardservice.application.CardApplicationDto;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -14,7 +13,6 @@ import org.springframework.web.client.RestTemplate;
  * @author Olga Maciaszek-Sharma
  */
 @Component
-@RefreshScope
 public class UserServiceClient {
 
 	private final RestTemplate restTemplate;
