@@ -1,8 +1,5 @@
 spring:
-  application:
-    name: card-service
-  profiles:
-    active: production
+
   cloud:
     config:
       uri: http://localhost:9888
