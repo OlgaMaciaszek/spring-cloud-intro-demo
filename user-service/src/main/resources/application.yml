@@ -1,10 +1,6 @@
 spring:
   application:
     name: user-service
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
 
 logging:
   level:

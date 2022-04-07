@@ -15,9 +15,6 @@ spring:
         - name: Retry
           args:
             retries: 3
-    loadbalancer:
-      ribbon:
-        enabled: false
 eureka:
   client:
     healthcheck:

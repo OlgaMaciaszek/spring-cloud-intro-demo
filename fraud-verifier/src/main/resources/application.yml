@@ -4,10 +4,6 @@ server:
 spring:
   application:
     name: fraud-verifier
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
 logging:
   level:
     org.springframework: info

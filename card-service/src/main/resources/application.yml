@@ -5,10 +5,6 @@ spring:
     name: card-service
   config:
     import: optional:configserver:http://localhost:9888
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
 logging:
   level:
     org.springframework: info
