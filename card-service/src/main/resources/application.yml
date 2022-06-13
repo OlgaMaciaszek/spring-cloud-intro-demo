@@ -11,7 +11,7 @@ spring:
         simple:
           instances:
             proxy:
-              - uri: http://localhost:9083
+              - uri: http://[::1]:9083
             fraud-verifier:
               - uri: http://[::1]:9081
 logging:
