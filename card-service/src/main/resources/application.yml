@@ -5,6 +5,15 @@ spring:
     name: card-service
   config:
     import: optional:configserver:http://localhost:9888
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            proxy:
+              - uri: http://localhost:9083
+            fraud-verifier:
+              - uri: http://[::1]:9081
 logging:
   level:
     org.springframework: info
