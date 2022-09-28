@@ -4,16 +4,21 @@ spring:
       active: production
     name: card-service
   config:
-    import: optional:configserver:http://localhost:9888
+    import: optional:configserver:http://localhost:8888
   cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
+    discovery:
+      client:
+        simple:
+          instances:
+            proxy:
+              - uri: http://[::1]:9083
+            fraud-verifier:
+              - uri: http://[::1]:9081
 logging:
   level:
     org.springframework: info
 server:
-  port: 9080
+  port: 9081
 management:
   endpoints:
     web:
